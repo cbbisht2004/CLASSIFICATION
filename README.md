@@ -33,7 +33,7 @@ This app allows users to:
 
 ## Features
 - **Interactive Sliders:** Adjust flower measurements and see predictions update live.
-- **Model:** Uses basic ML models(scikit-learn) for robust predictions.
+- **Models:** Uses basic ML models(scikit-learn) for robust predictions.
 - **Dataset Preview:** Explore random samples from the Iris dataset.
 - **Probability Visualization:** View prediction probabilities as a bar chart (Altair).
 - **Model-Accuracy** View the applied Model's accuracy.
@@ -55,8 +55,7 @@ This app allows users to:
 
 1. **Clone the repository or download the script:**
    ```bash
-   git clone <your-repo-url>
-   cd CLASSIFICATION
+   git clone <https://github.com/cbbisht2004/CLASSIFICATION>
    ```
 
 2. **Install dependencies:**
@@ -87,7 +86,7 @@ This app allows users to:
 
 ```
 CLASSIFICATION/
-├── Classification_Iris.py  # Main Streamlit app
+├── Classification_Iris.py                  # Main Streamlit app
 ├── requirements.txt                        # Python dependencies
 └── README.md                               # This file
 ```
