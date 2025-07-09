@@ -33,9 +33,10 @@ This app allows users to:
 
 ## Features
 - **Interactive Sliders:** Adjust flower measurements and see predictions update live.
-- **Random Forest Model:** Uses scikit-learn's RandomForestClassifier for robust predictions.
+- **Model:** Uses basic ML models(scikit-learn) for robust predictions.
 - **Dataset Preview:** Explore random samples from the Iris dataset.
 - **Probability Visualization:** View prediction probabilities as a bar chart (Altair).
+- **Model-Accuracy** View the applied Model's accuracy.
 - **Fast & Cached:** Data loading and model training are cached for instant interaction.
 - **Deploy-Ready:** Easily deploy to Streamlit Community Cloud or HuggingFace Spaces.
 
@@ -43,7 +44,7 @@ This app allows users to:
 
 ## How It Works
 1. **Data Loading:** Loads the Iris dataset from scikit-learn and prepares it as a DataFrame.
-2. **Model Training:** Trains a Random Forest classifier on the dataset (caching for speed).
+2. **Model Training:** Trains the selected model on the dataset (caching for speed).
 3. **User Input:** Users adjust sliders in the sidebar to set flower measurements.
 4. **Prediction:** The model predicts the species and shows the probability for each class.
 5. **Visualization:** Results are displayed as text and a bar chart.
@@ -68,15 +69,16 @@ This app allows users to:
 
 1. **Run the Streamlit app:**
    ```bash
-   streamlit run "Classification(IRIS)(Random_Forest).py"
+   streamlit run "Classification_Iris.py"
    ```
 
 2. **Interact:**
+   - Pick a model from the drop-down menu (Random Forest, SVM, Logistic Regression, KNN)
    - Use the sidebar sliders to adjust flower measurements.
    - View the predicted species and probability chart.
    - Expand the dataset preview to see random samples.
 
-3. **Stop the app:**
+4. **Stop the app:**
    - Press `Ctrl+C` in the terminal.
 
 ---
@@ -85,7 +87,7 @@ This app allows users to:
 
 ```
 CLASSIFICATION/
-├── Classification(IRIS)(Random_Forest).py  # Main Streamlit app
+├── Classification_Iris.py  # Main Streamlit app
 ├── requirements.txt                        # Python dependencies
 └── README.md                               # This file
 ```
