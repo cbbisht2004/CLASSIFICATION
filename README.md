@@ -107,6 +107,4 @@ CLASSIFICATION/
 
 ---
 
-**Author:** _Your Name Here_
-
-**License:** _Specify your license here_ 
+**Author:** Chetan Bisht
